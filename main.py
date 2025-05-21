@@ -378,3 +378,83 @@ print(f'You got' + str(int_points) + 'out of six questions')
 
 print(f'You got' + str(points) +'  out of 6 questions, Well done!')     
     
+# Title
+print('Uproar Movie')
+print('By Joe Koloa')
+
+
+import os
+import time
+
+
+
+# Variable Output
+str_playeranswer = ('')
+bool_questionLoop = False
+str_playername = ''
+int_points = 0
+list_questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6']
+
+
+
+
+
+
+
+
+time.sleep(1)
+print('Hello player, Welcome to my quiz of a 2023 NZ featured film, Uproar, \n A rugbv filled movie presenting with coming of age, codes of masculinity and racism, and rugby as an obliterating cultural force in provincial New Zealand.') 
+time.sleep(5)
+print('please answer one of the following questions')
+print('To start, please enter your name')
+str_playername = input('')
+print(f'Welcome {str_playername} , please press enter')
+enter = input('')
+
+
+ 
+
+
+# Make list for each questions
+list_quizquestions = ["Who is the Director of the film? \n a. Paul Middleditch \n b. Cliff Curtis \n c. Peter Jackson \n d. Jemaine Clememt",
+                     "Who play as John Waaka?\nHint: He appeared in the Hunter of the wilderpeople \n a. KJ APA  \n b. Uli Latukefu \n c. Julian dennison \n d. Martinson Henderson",
+                     "Where is it filmed? \n a. Auckland \n b. Dunedin \n c. Christchurch \n d. Wellington",
+                     "Which clip of the film is based on one of the true event ocurred in 1981? \n a. All blacks won the world cup \n b. Queen Street riot \n  c. Montego Bay \n d. Springboks tour",
+                     "Is Julian Dennison is an experienced rugby player in real life? \n a. Yes \n b. No \n c. Maybe \n d. IDK",
+                     "How can you describe the movie? \n a. Funny \n .b Poignant \n .c scary \n .d Emotional"]
+
+# Make a list for each answers
+list_quizanswer = ['a', 'c', 'b', 'd', 'a', 'd']
+MAX_SCORE = len(list_quizquestions)
+
+
+for i in range(len(list_quizquestions)):
+    print(MAX_SCORE) 
+    bool_questionLoop = True
+    print(list_quizquestions[i])
+    while bool_questionLoop == True:
+        
+        
+        
+        
+        
+        
+        # Keep on iterating on each questions the player answered
+        
+        str_playeranswer = input(f'Which one is a correct answer? a,b,c,d')
+        if str_playeranswer == list_quizanswer[i]:
+            int_points =+1
+            print(int_points)
+            bool_loop = True
+            print(" You are Very Correct indeed!")
+            bool_questionLoop = False
+        elif str_playeranswer > 'd':
+            print("Whoops, that is Incorrect womp womp")
+            print(int_score)
+            bool_questionLoop = True
+    
+    bool_loop = False
+    
+print(f'You got' + str(int_points) + 'out of six questions')
+
+
